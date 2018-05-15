@@ -17,7 +17,7 @@
             fill: #fff;
         }
     }
-
+    //修改一下 全屏时视频播放区域居中
     &:-webkit-full-screen {
         width: 100%;
         height: 100%;
@@ -25,7 +25,9 @@
         position: fixed;
         z-index: 100000;
         left: 0;
-        top: 0;
+        top: 50%;
+        transform: translate(0,-50%);
+        
 
         .dplayer-danmaku {
             .dplayer-danmaku-top,
